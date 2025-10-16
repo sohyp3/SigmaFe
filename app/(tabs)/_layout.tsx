@@ -45,6 +45,19 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="todo"
+        options={{
+          title: "Tasks",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "checkmark-done" : "checkmark-done-outline"}
+              size={24}
+              color={color}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
