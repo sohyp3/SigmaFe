@@ -1,36 +1,45 @@
 {
   "expo": {
-    "name": "SigmaAccounting",
-    "slug": "SigmaAccounting",
+    "name": "Sigma Notes",
+    "slug": "sigma-notes",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "sigmanotes",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
+      "bundleIdentifier": "com.hyp3.sigmaNotes",
       "config": {
         "usesNonExemptEncryption": false
       },
       "supportsTablet": true
     },
     "android": {
+      "package": "com.hyp3.sigmaNotes",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
       }
     },
-    "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/YOUR-PROJECT-ID"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "YOUR-PROJECT-ID"
+      }
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
@@ -39,9 +48,6 @@
       "expo-secure-store",
       "expo-font",
       "expo-web-browser"
-    ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    ]
   }
 }
