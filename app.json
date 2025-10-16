@@ -22,9 +22,7 @@
         "backgroundColor": "#ffffff"
       }
     },
-    "runtimeVersion": {
-      "policy": "appVersion"
-    },
+    "runtimeVersion": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/702d881b-72ca-48d4-af4f-a241b6eeee2a",
       "enabled": true,
