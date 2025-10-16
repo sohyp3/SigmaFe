@@ -22,17 +22,13 @@
         "backgroundColor": "#ffffff"
       }
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/YOUR-PROJECT-ID"
-    },
     "runtimeVersion": {
       "policy": "appVersion"
     },
-    "extra": {
-      "eas": {
-        "projectId": "YOUR-PROJECT-ID"
-      }
+    "updates": {
+      "url": "https://u.expo.dev/702d881b-72ca-48d4-af4f-a241b6eeee2a",
+      "enabled": true,
+      "checkAutomatically": "ON_LOAD"
     },
     "plugins": [
       "expo-router",
@@ -47,7 +43,15 @@
       ],
       "expo-secure-store",
       "expo-font",
-      "expo-web-browser"
-    ]
+      "expo-web-browser",
+      "expo-updates"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "702d881b-72ca-48d4-af4f-a241b6eeee2a"
+      }
+    },
+    "owner": "hyp3"
   }
 }

@@ -1,13 +1,12 @@
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: [
-      ["babel-preset-expo", { jsxImportSource: "nativewind" }],
-      "nativewind/babel",
-    ],
+    presets: [["babel-preset-expo", { jsxImportSource: "nativewind" }]],
     plugins: [
-      ["react-native-worklets/plugin", {}, "worklets"],           // 👈 UNIQUE NAME
-      ["react-native-reanimated/plugin", {}, "reanimated"],       // 👈 UNIQUE NAME
+      "babel-plugin-macros",
+      "nativewind/babel",
+      ["react-native-worklets/plugin", { blackbox: true }, "worklets"],
+      ["react-native-reanimated/plugin", { relativeSourceLocation: true }, "reanimated"]
     ],
   };
 };
